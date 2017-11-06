@@ -1,0 +1,32 @@
+Exercise 1:
+1. The cvMat object is read with the row number first and column number second.  In other words, a pixel is y-coordinate first and x-coordinate second.
+
+Excercise 2:
+1. The outputted images (besides the original image) are all different variations of grayscale
+
+2. These of the values of the pixel at (20, 25).  I am assuming that (20, 25) means x-coordinate of 20 and y-coordinate of 25, meaning row 25 and column 20.
+red: 226
+blue: 112
+green: 131
+y: 157
+cb: 177
+cr: 103
+hue: 5
+saturation: 129
+value: 226
+
+Ranges of pixel values of each of the above channels:
+
+hue: 0 to 180
+everything else: 0 to 255
+
+Excercise 3:
+2. Median filter seems to work better for both of salt pepper noise and gaussian noise
+
+Excercise 4:
+1. The first thresholded image looks like just a simple grayscale version of the original.  The binary threshold displays black for dark areas of the image and displays white for light areas.  The band threshold seems to be a reverse of binary threshold (displays white for dark areas and black for light areas).  Semi thresholding is band thresholding but instead of just pure white in the areas where white would have been displayed, we get various shades of gray.  Adaptive thresholding is like binary thresholding, but outlines edges better.
+
+2. The disadvantage of binary thresholding is that it's not as good in showing edges as adaptive thresholding.
+
+3. Adaptive thresholding is useful in situations where you would like to see edges in your image.
+
